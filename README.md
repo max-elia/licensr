@@ -41,7 +41,8 @@ The arguments are optional and will default to "config.json" and the current wor
 ### Configuration
 
 #license_text
-The path to the file with the full license text.
+The path to the file with the full license text. This file itself will be excluded from the licensing process. You are responsible for removing afterwards from your project.
+Don't place your license_text files into the LICENSES folder, because it will be rewritten during the licensing.
 
 #SPDX
 The short identifier of the license.

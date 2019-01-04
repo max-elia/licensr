@@ -1,0 +1,14 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: README.md
+Copyright: 2019 Andrea Janes <ajanes@unibz.it>, Max Elia Schweigkofler <schweigkofler.max@gmail.com>
+License: MIT
+
+Files: config.json
+Copyright: 2019 Andrea Janes <ajanes@unibz.it>, Max Elia Schweigkofler <schweigkofler.max@gmail.com>
+License: MIT
+
+Files: header.txt
+Copyright: 2019 Andrea Janes <ajanes@unibz.it>, Max Elia Schweigkofler <schweigkofler.max@gmail.com>
+License: MIT
+

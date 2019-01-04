@@ -1,3 +1,9 @@
+# Copyright (c) 2019 Andrea Janes <ajanes@unibz.it>, Max Elia Schweigkofler <schweigkofler.max@gmail.com>
+# 
+# This file is part of the project reuse-checker which is released under the MIT license.
+# See file LICENSE or go to https://github.com/max-elia/licensr for full license details.
+# 
+# SPDX-License-Identifier: MIT
 import argparse
 import json
 import re
@@ -5,7 +11,7 @@ import shutil
 import sys
 import os
 
-cwd = os.path.dirname(__file__)
+cwd = os.getcwd()
 root = ""
 
 def license_header(files, src_and_comm, header):
@@ -163,7 +169,7 @@ def license(args):
                 all_files.remove(lic_text)
 
         r = re.compile(
-            "((.*\.licen[cs]e)|(.*[Ll][Ii][Cc][Ee][Nn][SsCc][Ee])|(.*LICEN[CS]ES/.*)|(.*\.git/+)|(.*\.svn/+)|(.*COPYING/.*)|(.*copyright)|(.*\.spdx)|(.*\.gitignore))")
+            "((.*\.licen[cs]e)|(.*[Ll][Ii][Cc][Ee][Nn][SsCc][Ee])|(.*LICEN[CS]ES/.*)|(.*\.git/+)|(.*\.svn/+)|(.*COPYING/.*)|(.*copyright)|(.*\.spdx)|(.*\.gitignore)|(.*\.DS_Store))")
         all_files = list(set(all_files) - set(filter(r.match, all_files)))
 
         # Exceptions
@@ -185,7 +191,7 @@ def license(args):
                             for x in filename:
                                 exc_files.append(os.path.join(dirpath, x))
                     else:
-                        print("Path error in exception" + exception["path"])
+                        print("Path error in exception " + exception["path"])
 
                     exc_files = list(set(exc_files) - set(filter(r.match, exc_files)))
 

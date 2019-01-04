@@ -1,3 +1,9 @@
+# Copyright (c) 2019 Andrea Janes <ajanes@unibz.it>, Max Elia Schweigkofler <schweigkofler.max@gmail.com>
+# 
+# This file is part of the project reuse-checker which is released under the MIT license.
+# See file LICENSE or go to https://github.com/max-elia/licensr for full license details.
+# 
+# SPDX-License-Identifier: MIT
 import setuptools
 
 with open("README.md", "r") as fh:
@@ -5,7 +11,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="licensr",
-    version="0.1",
+    version="0.1.1",
     author="Max Elia Schweigkofler",
     author_email="schweigkofler.max@gmail.com",
     description="A CLI for licensing your project",
