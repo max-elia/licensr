@@ -1,4 +1,4 @@
-# Copyright (c) 2019 Andrea Janes <ajanes@unibz.it>, Max Elia Schweigkofler <schweigkofler.max@gmail.com>
+# Copyright (c) 2019 Max Elia Schweigkofler <schweigkofler.max@gmail.com>, Andrea Janes <ajanes@unibz.it>
 # 
 # This file is part of the project reuse-checker which is released under the MIT license.
 # See file LICENSE or go to https://github.com/max-elia/licensr for full license details.

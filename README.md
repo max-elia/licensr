@@ -15,11 +15,11 @@ Don't see what you need?
 [Open an issue](https://github.com/max-elia/licensr/issues/new)
 to suggest any changes or improvements!
 
-### Prerequisites
+## Prerequisites
 
 * Python 3.4+
 
-### Installation
+## Installation
 
 ```bash
 $ pip install licensr
@@ -28,7 +28,7 @@ $ pip install licensr
 Alternatively, grab the
 [zip](https://github.com/max-elia/licensr/tarball/v0.1)!
 
-### Usage
+## Usage
 
 From the command line:
 
@@ -38,21 +38,21 @@ $ licensr -c "config file" -p "project name"
 
 The arguments are optional and will default to "config.json" and the current working directory.
 
-### Configuration
+## Configuration
 
-#license_text
+#####license_text
 The path to the file with the full license text. This file itself will be excluded from the licensing process. You are responsible for removing afterwards from your project.
 Don't place your license_text files into the LICENSES folder, because it will be rewritten during the licensing.
 
-#SPDX
+#####SPDX
 The short identifier of the license.
 
-## Source Code Header
-#src_extensions_and_comment
+### Source Code Header
+#####src_extensions_and_comment
 You are required to add a comment-header to every source code file in your project. Therefore you have to specify under src_extensions_and_comment the src_extensions and the corresponding comment characters for every programming language used.
 For the comments you can put either one (single-line comment), two (opening and closing) or three (opening - middle - closing) strings into a list.
 
-#header
+#####header
 The header has to include a copyright notice and the SPDX Identifier of the license. In the config file it can be given as a path to a file or as string of the full header (be sure to include "\n")
 
 For the src files this information is sufficient.
@@ -63,15 +63,15 @@ The [REUSE Initiative's practices](https://reuse.software/practices/2.0/) specif
 * .license File
 	a file with the same name but the .license extension, containing the header.
 
-## Debian File
+### Debian File
 For this method in addition to the SPDX we need:
-#copyright
+#####copyright
 Year and Name of the copyright holder(s)
 
-## .license File
+### .license File
 For this method we only need the header.
 
-#exceptions
+#####exceptions
 If we have different licenses or copyright holders, we have to consider them in the exceptions. Here we have to specify the "path" variable for the desired directory or file. For the rest, based on which of the three preceding methods you want to use, you have to specify exactly the same options like before (except for the license_text, if the license is the same)
 
 If more that one licensing-method is possible the order in which the methods are used is:
@@ -82,6 +82,12 @@ If more that one licensing-method is possible the order in which the methods are
 ATTENTION: The tool overwrites all old headers with the new ones. Be sure to save them if you need them.
 
 
-### Contributing
+## Contributing
 
 I accept [pull requests](https://github.com/max-elia/licensr/compare);
+
+
+
+This software is intended to help programmers license correctly, but as stated in the license no guarantees are made to the correct functioning of it.
+You as the programmer are responsible for your own licensing and have to check if the desired output was produced.
+There is no kind of warranty, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfingement.
