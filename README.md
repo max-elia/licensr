@@ -2,8 +2,8 @@
 A command-line interface for easily licensing your project and make it compliant to the REUSE-Initiative's guidelines
 
 ---
-
-[![PyPI](https://img.shields.io/pypi/v/licenser.svg?maxAge=3700)](http://pypi.python.org/pypi/licensr)
+[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
+[![PyPI](https://img.shields.io/pypi/v/licensr.svg?maxAge=3700)](http://pypi.python.org/pypi/licensr)
 [![PyPI](https://img.shields.io/pypi/pyversions/licensr.svg?maxAge=3700)](http://pypi.python.org/pypi/licensr)
 
 Making your project compliant to the guidelines of the [REUSE Initiative](https://reuse.software/) i.e. adding license and copyright information to every file in your project is an annoying process and can be quite tedious.

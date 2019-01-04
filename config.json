@@ -1,0 +1,28 @@
+{
+	"SPDX": "MIT",
+	"license_text": "license.txt",
+	"header": "header.txt",
+	"copyright": "2019 Andrea Janes <ajanes@unibz.it>, Max Elia Schweigkofler <schweigkofler.max@gmail.com>",
+	"src_extensions_and_comment": [
+		{
+			"src_extension": ".py",
+			"comment": ["#"]
+		}
+	],
+
+	"exceptions": [
+		{
+			"path": "/example/",
+			"SPDX": "GPL-3.0+",
+			"license_text" : "license2.txt",
+			"header": "\nCopyright (C) 2017 FSFE e.V. <contact@fsfe.org>\nSPDX-License-Identifier: GPL-3.0+",
+			"src_extensions_and_comment": [
+				{
+					"src_extension": ".js",
+					"comment": ["//"]
+				},
+			]
+		}
+	]
+}
+

@@ -137,7 +137,7 @@ def license(args):
     json_file.close()
 
     root = args.project_path
-    if root[-1] != '/':
+    if len(root) > 0 and root[-1] != '/':
         root += "/"
     if not os.path.isdir(root):
         print("No valid path to root folder was given.")
