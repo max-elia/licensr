@@ -8,8 +8,8 @@ A command-line interface for easily licensing your project and make it compliant
 
 Making your project compliant to the guidelines of the [REUSE Initiative](https://reuse.software/) i.e. adding license and copyright information to every file in your project is an annoying process and can be quite tedious.
 
-Licensr allows you to quickly add your chosen to your project from the command line. 
-You just have to download the full license texts of your chosen licenses (and the one of your project's dependencies) and configure the config file to make the tool match your needs.
+Licensr allows you to quickly add your chosen license to your project from the command line. 
+You just have to download the full license texts of your license (and the ones of your project's dependencies) and configure the config file to make the tool match your needs.
 
 Don't see what you need?
 [Open an issue](https://github.com/max-elia/licensr/issues/new)
@@ -40,19 +40,19 @@ The arguments are optional and will default to "config.json" and the current wor
 
 ## Configuration
 
-#####license_text
+###### license_text
 The path to the file with the full license text. This file itself will be excluded from the licensing process. You are responsible for removing afterwards from your project.
 Don't place your license_text files into the LICENSES folder, because it will be rewritten during the licensing.
 
-#####SPDX
+###### SPDX
 The short identifier of the license.
 
 ### Source Code Header
-#####src_extensions_and_comment
+###### src_extensions_and_comment
 You are required to add a comment-header to every source code file in your project. Therefore you have to specify under src_extensions_and_comment the src_extensions and the corresponding comment characters for every programming language used.
 For the comments you can put either one (single-line comment), two (opening and closing) or three (opening - middle - closing) strings into a list.
 
-#####header
+###### header
 The header has to include a copyright notice and the SPDX Identifier of the license. In the config file it can be given as a path to a file or as string of the full header (be sure to include "\n")
 
 For the src files this information is sufficient.
@@ -65,13 +65,13 @@ The [REUSE Initiative's practices](https://reuse.software/practices/2.0/) specif
 
 ### Debian File
 For this method in addition to the SPDX we need:
-#####copyright
+###### copyright
 Year and Name of the copyright holder(s)
 
 ### .license File
 For this method we only need the header.
 
-#####exceptions
+###### exceptions
 If we have different licenses or copyright holders, we have to consider them in the exceptions. Here we have to specify the "path" variable for the desired directory or file. For the rest, based on which of the three preceding methods you want to use, you have to specify exactly the same options like before (except for the license_text, if the license is the same)
 
 If more that one licensing-method is possible the order in which the methods are used is:
